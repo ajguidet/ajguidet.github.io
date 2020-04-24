@@ -1,0 +1,121 @@
+:root {
+  --color-primary: #6cc0b9;
+  --color-secondary: #06c8a8;
+  --color-background: #fafafa;
+  --font-size: 18px;
+  --color-text: #121314;
+  --color-shadow: rgb(18, 19, 20, 0.15);
+  --color-bg-primary: var(--color-primary);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  font-size: var(--font-size);
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  line-height: calc(var(--font-size) * 1.8);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+h1,
+h2,
+h3 {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  line-height: auto;
+}
+strong {
+  color: var(--color-primary);
+}
+p {
+  padding-bottom: 10px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  height: 100vh;
+  text-align: left;
+}
+main {
+  width: 100%;
+}
+#header {
+  height: 30vh;
+  background-image: linear-gradient(
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: var(--color-background);
+}
+#header section h2 {
+  font-size: 50px;
+}
+#header .decorator {
+  position: absolute;
+  bottom: -50px;
+  height: 51px;
+  width: 100%;
+  z-index: 0;
+  background-color: var(--color-primary);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+#about {
+  width: 60%;
+  margin: 0 auto;
+}
+#about figure {
+  object-fit: cover;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+#about figure img {
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px var(--color-shadow);
+}
+#social {
+  width: 60%;
+  margin: 10px auto;
+}
+#social ul {
+  width: 60%;
+  display: flex;
+}
+#social ul li:first-child {
+  padding-right: 20px;
+}
+@media screen and (max-width: 600px) {
+  #about figure img {
+    width: 100px;
+  }
+  #header {
+    height: 20vh;
+  }
+  #header section h2 {
+    display: none;
+  }
+  #header section {
+    font-size: 18px;
+  }
+  #about,
+  #social {
+    width: 90%;
+  }
+}

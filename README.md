@@ -1,2 +1,2 @@
-# ajguidet.github.io
-ghpf
+# ajguidet.com
+Ajguidet portfolio
