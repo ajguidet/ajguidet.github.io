@@ -1,2 +1,1 @@
-# ajguidet.com
-Ajguidet portfolio
+# ajguidet.github.io
